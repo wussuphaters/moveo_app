@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Moveo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="sport_prompt">Quel sport pratiquez-vous ?</string>
+    <string name="localisation_hint">Où ça ?</string>
+
+    <string-array name="sports_array">
+        <item>Course à pied</item>
+        <item>Tennis</item>
+        <item>Golden shower</item>
+        <item>Handball</item>
+    </string-array>
+
+
+</resources>
