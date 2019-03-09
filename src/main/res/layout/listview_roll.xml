@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_style">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_vertical"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/maincolor"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/pp_ronde"/>
+        android:layout_height="70dp" />
+
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/prenom"
-            android:textColor="@color/maincolor"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-        <TextView
-            android:id="@+id/sport"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textColor="@color/maincolor"/>
-        <TextView
-            android:id="@+id/niveau"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textColor="@color/maincolor"/>
-        <TextView
-            android:id="@+id/distance"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:textColor="@color/maincolor"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/prenom"
+                android:layout_weight="1"
+                android:textColor="@color/maincolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:paddingLeft="60dp"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/maincolor"
+                android:layout_alignParentRight="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="à"/>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/maincolor"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="de vous !"/>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -42,16 +76,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <RatingBar
             android:id="@+id/note"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:numStars="5" />
+            android:layout_marginTop="5dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingRight="3dp"
+            android:layout_height="wrap_content"
+            android:text="Voir les détails >"
+            android:textColor="@color/maincolor"
+            android:textSize="15dp"/>
 
     </LinearLayout>
 

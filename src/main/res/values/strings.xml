@@ -11,10 +11,14 @@
     <string name="localisation_hint">Où ça ?</string>
 
     <string-array name="sports_array">
-        <item>Course à pied</item>
         <item>Tennis</item>
-        <item>Golden shower</item>
+        <item>Course à pied</item>
         <item>Handball</item>
+        <item>Volley</item>
+        <item>Pétanque</item>
+        <item>Equitation</item>
+        <item>Ball-Trap</item>
+        <item>Basket-Ball</item>
     </string-array>
 
 
