@@ -11,64 +11,32 @@
     <Spinner
         android:id="@+id/spinnerSport"
         android:layout_width="200dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/gradient_spinner"
+        android:entries="@array/sports_array"
+        android:prompt="@string/sport_prompt"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/gradient_spinner"/>
 
-    <SeekBar
-        android:id="@+id/distance"
+    <Spinner
+        android:id="@+id/spinnerNiveau"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:max="100"
-        android:min="3"
-        android:progress="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerSport"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <TextView
-        android:id="@+id/afficheDistance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/distance"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/bSearch"
-        android:layout_width="63dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="216dp"
-        android:background="@drawable/rounded_button"
-        android:drawableLeft="@android:drawable/ic_menu_search"
-        android:padding="16dp"
+        android:layout_marginBottom="350dp"
+        android:entries="@array/niveau_array"
+        android:prompt="@string/niveau_prompt"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
+        android:background="@drawable/gradient_spinner"/>
 
 </android.support.constraint.ConstraintLayout>
